@@ -30,14 +30,20 @@ function ShoppingList() {
     console.log("cleared items");
   }
 
-  const itemChecked = (id) => {
-    console.log("checking item " + id)
+  const toggleCheckedItem = (id) => {
+    console.log("checking item " + id);
     const updatedItems = items.map(item => {
       if (id === item.id) {
         return {...item, checked: !item.checked}
       }
       return item;
     });
+    setItems(updatedItems);
+  }
+
+  const deleteItem = (id) => {
+    console.log("deleting item " + id);
+    const updatedItems = items.filter(item => id !== item.id);
     setItems(updatedItems);
   }
 
@@ -53,7 +59,8 @@ function ShoppingList() {
                 key={item.id}
                 name={item.name}
                 checked={item.checked}
-                itemChecked={itemChecked}
+                toggleCheckedItem={toggleCheckedItem}
+                deleteItem={deleteItem}
               />
             ))
           }

@@ -45,6 +45,7 @@ ul {
   box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.35);
 }
 .shoppinglist-button {
+  cursor: pointer;
   color: #616161;
   background-color: #ffffff;
   font-size: large;
@@ -92,14 +93,23 @@ ul {
   margin-bottom: 12px;
 }
 
+.shoppinglist-item-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.15);
+}
+
 .shoppinglist-item {
   font-size: large;
   min-width: 300px;
   color: #616161;
-  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.15);
-  margin-top: 12px;
   padding: 12px;
   transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .shoppinglist-item:hover {
   color: #000000;
@@ -115,4 +125,18 @@ ul {
 .shoppinglist-item-checked:hover {
   color: #646464;
   background-color: #81C784;
+}
+
+.iconbutton {
+  padding: 4px 8px;
+  background-color: #ffffff;
+  box-shadow: unset;
+  color: #ff0000;
+  flex-grow: 1;
+  border: unset;
+}
+.iconbutton:hover {
+  border: unset;
+  background-color: #ff0000;
+  color: #ffffff;
 }
