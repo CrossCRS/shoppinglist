@@ -1,24 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 * { margin: 0; }
 html, body {
   height: 100%;
 }
 body {
-  margin: 64px 0 0 0;
+  margin: 10px;
   background-color: #ECEFF1;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #616161;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 ul {
@@ -29,6 +23,7 @@ ul {
 }
 
 .shoppinglist-input {
+  font-family: 'Montserrat', sans-serif;
   color: #616161;
   font-size: large;
   padding: 12px;
@@ -42,6 +37,7 @@ ul {
   box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.50);
 }
 .shoppinglist-button {
+  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   color: #616161;
   background-color: #ffffff;
@@ -72,28 +68,30 @@ ul {
   color: #c7c7c7;
   margin-top: 12px;
   font-weight: bold;
+  text-align: center;
 }
 
 .shoppinglist {
   background-color: #FFFFFF;
-  padding: 16px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   border: 1px solid #d1d1d1;
   border-radius: 3px;
   box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.15);
 }
 
 .shoppinglist-header {
-  margin-bottom: 12px;
+  padding: 16px;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.6em;
+  text-align: center;
 }
 
 .shoppinglist-item-container {
   display: flex;
   flex-direction: row;
-  margin-top: 12px;
+  margin-bottom: 12px;
   box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.15);
 }
 
@@ -107,6 +105,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 2;
 }
 .shoppinglist-item:hover {
   color: #ffffff;
@@ -126,10 +125,10 @@ ul {
 
 .iconbutton {
   padding: 4px 8px;
+  min-width: 50px;
   background-color: #ffffff;
   box-shadow: unset;
   color: #ff0000;
-  flex-grow: 1;
   border: unset;
 }
 .iconbutton:hover {

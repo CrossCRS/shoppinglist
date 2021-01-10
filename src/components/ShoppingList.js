@@ -49,7 +49,7 @@ function ShoppingList() {
 
   return (
     <div className="shoppinglist">
-      <h1 className="shoppinglist-header">Shopping List</h1>
+      <div className="shoppinglist-header"><h1 className="shoppinglist-header">Shopping List</h1></div>
       { items.length ?
           <ul>
           {
