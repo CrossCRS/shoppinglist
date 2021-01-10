@@ -94,6 +94,9 @@ ul {
   margin-bottom: 12px;
   box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.15);
 }
+.shoppinglist-item-container:last-child {
+  margin-bottom: 0;
+}
 
 .shoppinglist-item {
   font-size: large;
